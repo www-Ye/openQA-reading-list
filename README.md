@@ -9,6 +9,8 @@ Our list is still incomplete and the categorization might be inappropriate. We w
 
 * Biomedical openQA: COVID-QA, BioASQ
 
+* Chinese: DuReader
+
 ## openQA Papers
 
 ### 2022
@@ -36,6 +38,8 @@ Our list is still incomplete and the categorization might be inappropriate. We w
 1. ACL 2021. [PAIR: Leveraging Passage-Centric Similarity Relation for Improving Dense Passage Retrieval](https://arxiv.org/abs/2108.06027). Ruiyang Ren, Shangwen Lv, Yingqi Qu, Jing Liu, Wayne Xin Zhao, QiaoQiao She, Hua Wu, Haifeng Wang, Ji-Rong Wen.
 
 1. NAACL 2021. [RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering](https://arxiv.org/abs/2010.08191). Yingqi Qu, Yuchen Ding, Jing Liu, Kai Liu, Ruiyang Ren, Wayne Xin Zhao, Daxiang Dong, Hua Wu, Haifeng Wang.
+
+1. arXiv 2021. [Learning to Retrieve Passages without Supervision](https://arxiv.org/abs/2112.07708). Ori Ram, Gal Shachaf, Omer Levy, Jonathan Berant, Amir Globerson.
 
 ### 2020
 
