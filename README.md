@@ -27,7 +27,7 @@ Our list is still incomplete and the categorization might be inappropriate. We w
 
 1. EMNLP 2021 Demo. [Open-Domain Question-Answering for COVID-19 and Other Emergent Domains](https://arxiv.org/abs/2110.06962). Sharon Levy, Kevin Mo, Wenhan Xiong, William Yang Wang.
   <br> 👉 Datasets: COVID-QA
-  <br> 👉 Method: Retrieval-stage: Dense Retrieval + K-Means + BM25 re-ranking, MRC-stage: fine-tuned on the SQuAD2.0 and fine-tuning this model on COVIDQA
+  <br> 👉 Method: Two-stage, Retrieval-stage: Dense Retrieval + K-Means + BM25 re-ranking, MRC-stage: fine-tuned on the SQuAD2.0 and fine-tuning this model on COVIDQA
 
 1. EMNLP 2021 Findings. [Dense Hierarchical Retrieval for Open-Domain Question Answering](https://export.arxiv.org/pdf/2110.15439.pdf). Ye Liu, Kazuma Hashimoto, Yingbo Zhou, Semih Yavuz, Caiming Xiong, Philip S. Yu.
   <br> 👉 Datasets: Natural Questions (NQ), TriviaQA, WebQuestions, CuratedTREC (TREC)
@@ -54,7 +54,7 @@ Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, Ming-Wei Chang.
 
 1. EMNLP 2020. [Dense Passage Retrieval for Open-Domain Question Answering](https://arxiv.org/pdf/2004.04906.pdf), Vladimir Karpukhin, Barlas Oğuz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, Wen-tau Yih.
   <br> 👉 Datasets: NQ, TriviaQA, WQ, TREC, SQuAD
-  <br> 👉 Method: Chose hard negative examples, DPR + BM25
+  <br> 👉 Method: Dense Retrieval, Chose hard negative examples, DPR + BM25
 
 1. EMNLP 2020. [How Much Knowledge Can You Pack Into the Parameters of a Language Model?](https://arxiv.org/pdf/2002.08910.pdf). Adam Roberts, Colin Raffel, Noam Shazeer.
 
@@ -69,8 +69,11 @@ Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, Ming-Wei Chang.
 1. OpenAI 2019. [Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf). Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever.
 
 1. NAACL 2019 (demonstration). [End-to-end Open-domain Question Answering with BERTserini](https://arxiv.org/pdf/1902.01718.pdf). Wei Yang, Yuqing Xie, Aileen Lin, Xingyu Li, Luchen Tan, Kun Xiong, Ming Li, Jimmy Lin.
+  <br> 👉 Datasets: SQuAD
+  <br> 👉 Method: Two-stage, Anserini + Bert MRC
 
 1. ACL 2019. [Latent Retrieval for Weakly Supervised Open Domain Question Answering](https://aclanthology.org/P19-1612.pdf). Kenton Lee, Ming-Wei Chang, Kristina Toutanova.
+  <br> 👉 Method: End-to-End openQA
 
 1. ACL 2019. [Real-Time Open-Domain Question Answering with Dense-Sparse Phrase Index](https://arxiv.org/pdf/1906.05807.pdf). Minjoon Seo, Jinhyuk Lee, Tom Kwiatkowski, Ankur P. Parikh, Ali Farhadi, Hannaneh Hajishirzi.
 
@@ -79,7 +82,7 @@ Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, Ming-Wei Chang.
 1. EMNLP 2019. [A Discrete Hard EM Approach for Weakly Supervised Question Answering](https://arxiv.org/pdf/1909.04849.pdf). Sewon Min, Danqi Chen, Hannaneh Hajishirzi, Luke Zettlemoyer.
 
 1. EMNLP 2019. [Multi-passage BERT: A Globally Normalized BERT Model for Open-domain Question Answering](https://arxiv.org/pdf/1908.08167.pdf). Zhiguo Wang, Patrick Ng, Xiaofei Ma, Ramesh Nallapati, Bing Xiang.
-  <br> 👉 Task: Multi-Paragraph MRC
+  <br> 👉 Method: Multi-Paragraph MRC
 
 1. EMNLP 2019. [PullNet: Open Domain Question Answering with Iterative Retrieval on Knowledge Bases and Text](https://arxiv.org/pdf/1904.09537.pdf). Haitian Sun, Tania Bedrax-Weiss, William W. Cohen.
 
@@ -88,6 +91,7 @@ Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, Ming-Wei Chang.
 1. arXiv 2019. [Knowledge Guided Text Retrieval and Reading for Open Domain Question Answering](https://arxiv.org/pdf/1911.03868.pdf). Sewon Min, Danqi Chen, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 1. arXiv 2019. [Passage Re-ranking with BERT](https://arxiv.org/abs/1901.04085). Rodrigo Nogueira, Kyunghyun Cho.
+  <br> 👉 Method: Passage rerank
 
 ### 2018
 
@@ -98,22 +102,34 @@ Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, Ming-Wei Chang.
 1. ACL 2018. [Denoising Distantly Supervised Open-domain Question Answering](https://www.aclweb.org/anthology/P18-1161.pdf). ankai Lin, Haozhe Ji, Zhiyuan Liu, Maosong Sun.
 
 1. ACL 2018. [Simple and Effective Multi-Paragraph Reading Comprehension](https://arxiv.org/abs/1710.10723). Christopher Clark, Matt Gardner.
-  <br> 👉 Task: Multi-Paragraph MRC
+  <br> 👉 Method: Multi-Paragraph MRC
 
 1. EMNLP 2018. [Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text](https://www.aclweb.org/anthology/D18-1455.pdf). Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Kathryn Mazaitis, Ruslan Salakhutdinov, William Cohen.
+  <br> 👉 Method: KB + Text
 
 1. NAACL-SRW 2018. [Training a Ranking Function for Open-Domain Question Answering](https://arxiv.org/pdf/1804.04264.pdf). Phu Mon Htut, Samuel R. Bowman, Kyunghyun Cho.
+  <br> 👉 Method: Passage rerank
 
 ### 2017
 
 1. ACL 2017. [Reading Wikipedia to Answer Open-Domain Questions](https://arxiv.org/pdf/1704.00051.pdf). Danqi Chen, Adam Fisch, Jason Weston, Antoine Bordes.
   <br> 👉 Datasets: SQuAD
-  <br> 👉 Method: TF-IDF + MRC
+  <br> 👉 Method: Two-stage, TF-IDF + MRC
 
 ## Related Papers
 
-The task of those papers are somewhat relevant to Open QA (i.e. MRC, Language Models, etc.), of much value as well
+The task of those papers are somewhat relevant to Open QA (i.e. MRC, Dense Retrieval, Language Models, etc.), of much value as well
 
+### 2022
+
+1. arXiv 2022. [Saving Dense Retriever from Shortcut Dependency in Conversational Search](https://arxiv.org/abs/2202.07280). Sungdong Kim, Gangwoo Kim.
+  <br> 👉 Task: Coversational QA
+
+### 2021
+
+1. arXiv 2021. [Slot Filling for Biomedical Information Extraction](https://arxiv.org/abs/2109.08564). Yannis Papanikolaou, Francine Bennett.
+  <br> 👉 Task: IE, Slot Filling
+  <br> 👉 Method: use dense retrieval and mrc to do slot filling
 
 ### References
 
